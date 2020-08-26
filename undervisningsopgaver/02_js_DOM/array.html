@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            color: lightcoral;
+        }
+
+        #display {
+            width: 28vw;
+            height: 20wv;
+            border: 1px solid blue;
+            margin: 7vw;
+            padding: 1vw;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="display"></div>
+
+    <script>
+        let playlist = ["fashion week", "often", "tusa", "första klivet", "paid my dues", "post malone", "time", "my love", "breaking me", "feeling myself"];
+
+        playlist.forEach(sang => {
+            document.querySelector("#display").innerHTML += `${sang} <br>`;
+        })
+
+    </script>
+</body>
+
+</html>
