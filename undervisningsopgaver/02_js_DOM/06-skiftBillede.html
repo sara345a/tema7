@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <header>
+        <h1>Titel</h1>
+    </header>
+
+    <main>
+        <h2>Undertitel</h2>
+        <section id="undertitel">
+
+            <article>
+                <img src="Udklip.JPG" alt="blomst" width="50" height="50">
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellat, vitae perspiciatis beatae ex expedita a dolorem at. Quod possimus, labore repellat sunt culpa aut cumque ipsum quae, reprehenderit impedit necessitatibus, fugit rem repudiandae neque reiciendis qui quibusdam voluptatum beatae.</p>
+            </article>
+
+
+            <article>
+                <img src="Udklip.JPG" alt="blomst" width="50" height="50">
+                <h3>Article 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt impedit sapiente neque, corporis quasi accusantium necessitatibus numquam, quibusdam quod quis ab, vel. Laudantium, consectetur, dicta quisquam a vero quia, dolores incidunt vitae culpa iusto odit voluptate quod soluta, assumenda repellendus!</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>This is the footer</footer>
+
+    <script>
+        document.addEventListener("click", skiftBillede);
+
+        function skiftBillede() {
+            const pic1 = document.querySelector("article:nth-child(1) img");
+            console.log(pic1);
+            pic1.src = "https://placeimg.com/400/300/arch?t=", Math.round(Math.random() * 10);
+            pic1.alt = "random billede";
+        }
+
+
+
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            console.log("start");
+
+            let mainSection = document.querySelector("section");
+
+            //nyt article element
+            let newArticle = document.createElement("article");
+
+            //ny H# element
+            let overskrift = document.createElement("h3");
+
+            //text til overskriften
+            let overskriftText = document.createTextNode("Article 3");
+
+            //indsæt tekst i overskrift
+            overskrift.appendChild(overskriftText);
+
+            //tilføj overskrift til article
+            newArticle.appendChild(overskrift);
+
+            //tilføj article til section
+            mainSection.appendChild(newArticle);
+
+            //*************************************************//
+            //nyt billede element
+            let img = document.createElement("img");
+
+            //actual billede til billede element
+            img.setAttribute("src", "blomst2.png");
+            img.setAttribute("width", "50");
+            img.setAttribute("height", "50");
+
+            //tilføj billede til article
+            newArticle.appendChild(img);
+
+
+            //ny P# element
+            let text = document.createElement("p");
+
+            //text til p element
+            let textText = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt impedit sapiente neque, corporis quasi accusantium necessitatibus numquam, quibusdam quod quis ab, vel. Laudantium, consectetur, dicta quisquam a vero quia, dolores incidunt vitae culpa iusto odit voluptate quod soluta, assumenda repellendus!");
+
+            //indsæt tekst i overskrift
+            overskrift.appendChild(overskriftText);
+
+            //tilføj overskrift til article
+            newArticle.appendChild(overskrift);
+
+            //indsæt tekst i p
+            text.appendChild(textText);
+
+            //indsæt tekst i article
+            newArticle.appendChild(text);
+
+        }
+
+    </script>
+</body>
+
+</html>
