@@ -14,7 +14,9 @@
     </header>
 
     <main>
+        <h2>Undertitel</h2>
         <section id="undertitel">
+
             <article>
                 <img src="Udklip.JPG" alt="blomst" width="50" height="50">
                 <h3>Article 1</h3>
@@ -37,6 +39,18 @@
         const overskrift = document.querySelector("h1");
         overskrift.textContent;
         console.log(overskrift.textContent);
+
+        const underoverskrift = document.querySelector("h2");
+        underoverskrift.textContent;
+        console.log(underoverskrift.textContent);
+
+        const art1 = document.querySelector("article:first-child");
+        art1.textContent;
+        console.log(art1.textContent);
+
+        const art2 = document.querySelector("article:nth-child(2)");
+        art1.textContent;
+        console.log(art2.textContent);
 
     </script>
 </body>
