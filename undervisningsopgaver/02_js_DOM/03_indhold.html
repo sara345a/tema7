@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <header>
+        <h1>Titel</h1>
+    </header>
+
+    <main>
+        <h2>Undertitel</h2>
+        <section id="undertitel">
+
+            <article>
+                <img src="Udklip.JPG" alt="blomst" width="50" height="50">
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellat, vitae perspiciatis beatae ex expedita a dolorem at. Quod possimus, labore repellat sunt culpa aut cumque ipsum quae, reprehenderit impedit necessitatibus, fugit rem repudiandae neque reiciendis qui quibusdam voluptatum beatae.</p>
+            </article>
+
+
+            <article>
+                <img src="Udklip.JPG" alt="blomst" width="50" height="50">
+                <h3>Article 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt impedit sapiente neque, corporis quasi accusantium necessitatibus numquam, quibusdam quod quis ab, vel. Laudantium, consectetur, dicta quisquam a vero quia, dolores incidunt vitae culpa iusto odit voluptate quod soluta, assumenda repellendus!</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>This is the footer</footer>
+
+    <script>
+        const pic1 = document.querySelector("article:nth-child(1) img");
+        console.log(pic1);
+        pic1.src = "blomst2.png";
+        pic1.alt = "blomst nummer 2";
+
+
+        const pic2 = document.querySelector("article:nth-child(2) img");
+        console.log(pic2);
+        pic2.src = "blomst2.png";
+        pic2.alt = "blomst nummer 2";
+
+        //*******************************************//
+
+    </script>
+</body>
+
+</html>
